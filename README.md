@@ -1,73 +1,134 @@
-# Welcome to your Lovable project
+# Portfólio - Guilherme Ariston Portes
 
-## Project info
+Um portfólio pessoal moderno e responsivo para estudante de Engenharia de Software, especializado em Data Science e Inteligência Artificial.
 
-**URL**: https://lovable.dev/projects/d12fd207-1b46-4eb8-bbf1-9141593359e3
+## 🚀 Tecnologias Utilizadas
 
-## How can I edit this code?
+- **React** - Biblioteca JavaScript para interfaces de usuário
+- **TypeScript** - JavaScript com tipagem estática
+- **Tailwind CSS** - Framework CSS utilitário
+- **Vite** - Build tool moderno e rápido
+- **Shadcn/ui** - Componentes de UI reutilizáveis
+- **Lucide React** - Ícones SVG modernos
 
-There are several ways of editing your application.
+## 🎨 Design System
 
-**Use Lovable**
+### Cores Principais
+- **Azul Principal**: `#1A66CC` - Usado para elementos primários
+- **Vermelho Accent**: `#ff2c2c` - Usado para elementos de destaque
+- **Gradientes**: Combinação harmoniosa das cores principais
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d12fd207-1b46-4eb8-bbf1-9141593359e3) and start prompting.
+### Tipografia
+- **Fonte**: Roboto (Google Fonts)
+- **Pesos**: 300, 400, 500, 700
 
-Changes made via Lovable will be committed automatically to this repo.
+### Estilo
+- Design minimalista e clean
+- Layout responsivo (mobile-first)
+- Animações suaves e elegantes
+- Navegação fluida entre seções
 
-**Use your preferred IDE**
+## 📁 Estrutura do Projeto
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```
+src/
+├── components/
+│   ├── ui/           # Componentes base (Shadcn/ui)
+│   ├── About.tsx     # Seção sobre
+│   ├── Contact.tsx   # Seção de contato
+│   ├── Footer.tsx    # Rodapé
+│   ├── Hero.tsx      # Seção hero/apresentação
+│   ├── Navbar.tsx    # Navegação principal
+│   ├── Projects.tsx  # Portfólio de projetos
+│   └── Skills.tsx    # Habilidades técnicas
+├── pages/
+│   ├── Index.tsx     # Página principal
+│   └── NotFound.tsx  # Página 404
+├── lib/
+│   └── utils.ts      # Utilitários
+├── hooks/            # Custom hooks
+├── index.css         # Estilos globais e design system
+└── main.tsx          # Ponto de entrada da aplicação
+```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🔧 Como Executar
 
-Follow these steps:
+### Pré-requisitos
+- Node.js (versão 18 ou superior)
+- npm ou yarn
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Instalação
+```bash
+# Clone o repositório
+git clone <seu-repositorio>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Entre no diretório
+cd portfolio-guilherme
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Instale as dependências
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Execute o projeto em modo de desenvolvimento
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+O projeto estará disponível em `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build para Produção
+```bash
+# Gerar build otimizado
+npm run build
 
-**Use GitHub Codespaces**
+# Visualizar build localmente
+npm run preview
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📱 Seções do Portfólio
 
-## What technologies are used for this project?
+### 1. **Hero Section**
+- Apresentação pessoal
+- Slogan: "Ideias além de ideias"
+- Links para contato e projetos
+- Foto de perfil com animação
 
-This project is built with:
+### 2. **Sobre Mim**
+- Descrição profissional
+- Localização (Almirante Tamandaré - PR)
+- Foco em Data Science e IA
+- Cards informativos
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### 3. **Projetos**
+- Showcase de projetos principais
+- Cards interativos com hover effects
+- Links para GitHub e demos
+- Tecnologias utilizadas em badges
 
-## How can I deploy this project?
+### 4. **Habilidades**
+- Organizadas por categorias
+- Linguagens de programação
+- Ferramentas e frameworks
+- Data Science e IA
 
-Simply open [Lovable](https://lovable.dev/projects/d12fd207-1b46-4eb8-bbf1-9141593359e3) and click on Share -> Publish.
+### 5. **Contato**
+- Informações de contato
+- Links para redes sociais
+- Call-to-action para colaborações
 
-## Can I connect a custom domain to my Lovable project?
+## 🌐 SEO e Performance
 
-Yes, you can!
+- Meta tags otimizadas
+- Open Graph para redes sociais
+- Lazy loading de componentes
+- Código otimizado e minificado
+- Design responsivo
+- Acessibilidade (WCAG)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📧 Contato
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- **Email**: gui-ariston@outlook.com
+- **GitHub**: [@Guiariston](https://github.com/Guiariston)
+- **Localização**: Almirante Tamandaré - Paraná
+
+---
+
+Desenvolvido com ❤️ por Guilherme Ariston Portes
