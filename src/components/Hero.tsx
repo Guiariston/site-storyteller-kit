@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
         <div className="mb-8">
           <img
-            src="https://logodetimes.com/wp-content/uploads/parana.png"
+            src="https://pbs.twimg.com/media/EUpIBC5WAAAHfeJ?format=jpg&name=large"
             alt="Guilherme Ariston Portes"
             className="w-32 h-32 rounded-full mx-auto mb-6 shadow-card animate-float"
           />
