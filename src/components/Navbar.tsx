@@ -23,6 +23,14 @@ const Navbar = () => {
     }
   };
 
+  // 🔹 Alteração 1: criamos um array com label (menu) e id (seção real)
+  const menuItems = [
+    { label: "Sobre", id: "about" },
+    { label: "Projetos", id: "projects" },
+    { label: "Habilidades", id: "skills" },
+    { label: "Contato", id: "contact" },
+  ];
+
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -42,14 +50,15 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            {["Sobre", "Projetos", "Habilidades", "Contato"].map((item) => (
+            {/* 🔹 Alteração 2: usamos menuItems em vez de item.toLowerCase() */}
+            {menuItems.map((item) => (
               <Button
-                key={item}
+                key={item.id}
                 variant="ghost"
-                onClick={() => scrollToSection(item.toLowerCase())}
+                onClick={() => scrollToSection(item.id)}
                 className="text-foreground hover:text-primary transition-colors"
               >
-                {item}
+                {item.label}
               </Button>
             ))}
           </div>
@@ -69,14 +78,15 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-background/95 backdrop-blur-md border-t">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {["Sobre", "Projetos", "Habilidades", "Contato"].map((item) => (
+              {/* 🔹 Alteração 3: aqui também usamos menuItems */}
+              {menuItems.map((item) => (
                 <Button
-                  key={item}
+                  key={item.id}
                   variant="ghost"
-                  onClick={() => scrollToSection(item.toLowerCase())}
+                  onClick={() => scrollToSection(item.id)}
                   className="w-full text-left justify-start"
                 >
-                  {item}
+                  {item.label}
                 </Button>
               ))}
             </div>

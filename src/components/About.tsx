@@ -1,13 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { BookOpen, Brain, Code, MapPin } from "lucide-react";
 
-const About = () => {
+const AboutMe = () => {
   return (
     <section id="sobre" className="py-20 bg-portfolio-light-gray/30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Sobre <span className="text-gradient">Mim</span>
+            Um pouco sobre <span className="text-gradient">Mim</span> 🚗
           </h2>
           <div className="w-20 h-1 gradient-hero mx-auto rounded-full"></div>
         </div>
@@ -15,7 +15,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-in">
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Cursando Engenharia de Software, sou um grande admirador de Data Science 
+              Olá, eu sou Guilherme Ariston Portes, estou cursando Engenharia de Software, sou um grande admirador de Data Science 
               e Inteligência Artificial. Atualmente estou explorando diversas linguagens 
               e tecnologias para ampliar meus conhecimentos e experiências na área.
             </p>
@@ -74,4 +74,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutMe;
