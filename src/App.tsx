@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import AboutMe from "./components/AboutMe";
 import { Analytics } from "@vercel/analytics/react"
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -15,7 +16,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-      <Analytics>
+      <Analytics />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/AboutMe" element={<AboutMe />}/>
