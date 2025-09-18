@@ -7,31 +7,24 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Decodificando Ideias",
-      description: "Um projeto inovador focado em análise de dados e desenvolvimento web, combinando Python para processamento de dados com HTML para criação de interfaces interativas. Explora conceitos de Data Science aplicados a problemas reais.",
-      technologies: ["Python", "HTML", "Data Science", "Web Development"],
-      github: "https://github.com/Guiariston",
+      title: "Portifólio Pessoal",
+      description:
+        "Projeto pessoal criado na faculdade para o uso da matéria de DEVOPS, nele contem informções pessoais, projetos, habilidades, contatos etc... Projeto desenvolvida com ajuda da lovable, para ospedar utilizei o vercel e como repositório o próprio github",
+      technologies: ["React", "TypeScript ", "Tailwind CSS", "Vite "],
+      github: "https://github.com/Guiariston/site-storyteller-kit",
       demo: "#",
-      image: "/api/placeholder/400/250"
+      image: "https://site-storyteller-kit.vercel.app/",
     },
     {
       id: 2,
-      title: "Machine Learning Explorer",
-      description: "Plataforma educativa para explorar algoritmos de machine learning, visualizar dados e treinar modelos de forma interativa. Ideal para aprendizado e experimentação com IA.",
+      title: "VozOn",
+      description:
+        "Vozon é um projeto em Python desenvolvido para explorar comandos de voz e interação com assistentes virtuais. O objetivo é permitir que o usuário se comunique por voz com o sistema, que processa o áudio e retorna respostas em tempo real. O sistema utiliza bibliotecas de reconhecimento de fala e síntese de voz, podendo ser expandido para integração com APIs externas (como OpenAI, Google Speech-to-Text, entre outras). É um estudo prático em interfaces baseadas em voz, automação e acessibilidade.",
       technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
-      github: "https://github.com/Guiariston",
+      github: "https://github.com/Guiariston/Vozon",
       demo: "#",
-      image: "/api/placeholder/400/250"
+      image: "/api/placeholder/400/250",
     },
-    {
-      id: 3,
-      title: "Data Insights Dashboard",
-      description: "Dashboard interativo para visualização de dados complexos, permitindo análises profundas e geração de relatórios automatizados. Ferramenta poderosa para tomada de decisões baseada em dados.",
-      technologies: ["Python", "Streamlit", "PostgreSQL", "Plotly"],
-      github: "https://github.com/Guiariston",
-      demo: "#",
-      image: "/api/placeholder/400/250"
-    }
   ];
 
   return (
@@ -43,8 +36,8 @@ const Projects = () => {
           </h2>
           <div className="w-20 h-1 gradient-hero mx-auto rounded-full mb-4"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Aqui estão alguns dos projetos que desenvolvi, explorando desde Data Science 
-            até desenvolvimento web
+            Aqui estão alguns dos projetos que desenvolvi, explorando desde Data
+            Science até desenvolvimento web
           </p>
         </div>
 
@@ -59,20 +52,23 @@ const Projects = () => {
                 <div className="h-48 bg-gradient-hero rounded-t-lg flex items-center justify-center relative overflow-hidden">
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="text-white text-6xl font-bold opacity-80 z-10">
-                    {project.title.split(' ').map(word => word[0]).join('')}
+                    {project.title
+                      .split(" ")
+                      .map((word) => word[0])
+                      .join("")}
                   </div>
                 </div>
               </CardHeader>
-              
+
               <CardContent className="p-6">
                 <CardTitle className="text-xl mb-3 group-hover:text-primary transition-colors">
                   {project.title}
                 </CardTitle>
-                
+
                 <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech) => (
                     <Badge
@@ -84,7 +80,7 @@ const Projects = () => {
                     </Badge>
                   ))}
                 </div>
-                
+
                 <div className="flex gap-3">
                   <Button
                     size="sm"
@@ -101,12 +97,8 @@ const Projects = () => {
                       Código
                     </a>
                   </Button>
-                  
-                  <Button
-                    size="sm"
-                    asChild
-                    className="flex-1 shadow-button"
-                  >
+
+                  <Button size="sm" asChild className="flex-1 shadow-button">
                     <a
                       href={project.demo}
                       target="_blank"
