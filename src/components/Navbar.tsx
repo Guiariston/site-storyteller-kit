@@ -23,12 +23,12 @@ const Navbar = () => {
     }
   };
 
- 
+  // 🔹 Alteração 1: criamos um array com label (menu) e id (seção real)
   const menuItems = [
-    { label: "Sobre", id: "AboutMe" },
-    { label: "Projetos", id: "Projects" },
-    { label: "Habilidades", id: "Skills" },
-    { label: "Contato", id: "Contact" },
+    { label: "Sobre", id: "about" },
+    { label: "Projetos", id: "projects" },
+    { label: "Habilidades", id: "skills" },
+    { label: "Contato", id: "contact" },
   ];
 
   return (
@@ -48,9 +48,9 @@ const Navbar = () => {
             GP
           </div>
 
-
+          {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-          
+            {/* 🔹 Alteração 2: usamos menuItems em vez de item.toLowerCase() */}
             {menuItems.map((item) => (
               <Button
                 key={item.id}

@@ -11,13 +11,6 @@ const Contact = () => {
       href: "mailto:gui-ariston@outlook.com",
       color: "text-primary"
     },
- {
-      icon: Mail,
-      title: "Email",
-      value: "guiariston2005@gmail.com",
-      href: "mailto:guiariston2005@gmail.com",
-      color: "text-primary"
-    },
     {
       icon: Github,
       title: "GitHub",

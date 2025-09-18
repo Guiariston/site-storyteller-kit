@@ -1,12 +1,12 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Code,
-  Database,
-  Brain,
-  Globe,
-  BarChart,
-  GitBranch,
+import { 
+  Code, 
+  Database, 
+  Brain, 
+  Globe, 
+  BarChart, 
+  GitBranch 
 } from "lucide-react";
 
 const Skills = () => {
@@ -15,45 +15,38 @@ const Skills = () => {
       title: "Linguagens de Programação",
       icon: Code,
       skills: ["Python", "JavaScript", "HTML", "CSS", "SQL", "TypeScript"],
-      color: "text-primary",
+      color: "text-primary"
     },
     {
       title: "Data Science & IA",
       icon: Brain,
-      skills: [
-        "Machine Learning",
-        "Pandas",
-        "NumPy",
-        "Scikit-learn",
-        "TensorFlow",
-        "Matplotlib",
-      ],
-      color: "text-accent",
+      skills: ["Machine Learning", "Pandas", "NumPy", "Scikit-learn", "TensorFlow", "Matplotlib"],
+      color: "text-accent"
     },
     {
       title: "Desenvolvimento Web",
       icon: Globe,
-      skills: ["React", "Node.js", , "HTML5", "CSS3"],
-      color: "text-primary",
+      skills: ["React", "Node.js", "Express", "HTML5", "CSS3", "Responsive Design"],
+      color: "text-primary"
     },
     {
       title: "Banco de Dados",
       icon: Database,
-      skills: ["MySQL", "MongoDB", "Database Design"],
-      color: "text-accent",
+      skills: ["PostgreSQL", "MySQL", "MongoDB", "SQLite", "Database Design"],
+      color: "text-accent"
     },
     {
       title: "Análise de Dados",
       icon: BarChart,
-      skills: ["Jupyter"],
-      color: "text-primary",
+      skills: ["Data Visualization", "Statistical Analysis", "Jupyter", "Plotly", "Seaborn"],
+      color: "text-primary"
     },
     {
       title: "Ferramentas & Versionamento",
       icon: GitBranch,
-      skills: ["Git", "GitHub", "VS Code"],
-      color: "text-accent",
-    },
+      skills: ["Git", "GitHub", "VS Code", "Docker", "Linux", "APIs REST"],
+      color: "text-accent"
+    }
   ];
 
   return (
@@ -65,8 +58,7 @@ const Skills = () => {
           </h2>
           <div className="w-20 h-1 gradient-hero mx-auto rounded-full mb-4"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Tecnologias e ferramentas que domino e estou constantemente
-            aprendendo
+            Tecnologias e ferramentas que domino e estou constantemente aprendendo
           </p>
         </div>
 
@@ -81,12 +73,10 @@ const Skills = () => {
               >
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
-                    <IconComponent
-                      className={`h-8 w-8 ${category.color} mr-3`}
-                    />
+                    <IconComponent className={`h-8 w-8 ${category.color} mr-3`} />
                     <h3 className="text-lg font-semibold">{category.title}</h3>
                   </div>
-
+                  
                   <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill) => (
                       <Badge
@@ -111,8 +101,8 @@ const Skills = () => {
                 Sempre <span className="text-gradient">Aprendendo</span>
               </h3>
               <p className="text-muted-foreground">
-                Explorando novas tecnologias e metodologias para estar sempre
-                atualizado com as tendências do mercado
+                Explorando novas tecnologias e metodologias para estar sempre atualizado 
+                com as tendências do mercado
               </p>
             </div>
           </div>
