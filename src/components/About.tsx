@@ -15,18 +15,16 @@ const AboutMe = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-in">
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Olá, eu sou Guilherme Ariston Portes, estou cursando Engenharia de
-              Software, sou um grande admirador de Data Science e Inteligência
-              Artificial. Atualmente estou explorando diversas linguagens e
-              tecnologias para ampliar meus conhecimentos e experiências na
-              área.
+              Olá, eu sou Guilherme Ariston Portes, estou cursando Engenharia de Software, sou um grande admirador de Data Science 
+              e Inteligência Artificial. Atualmente estou explorando diversas linguagens 
+              e tecnologias para ampliar meus conhecimentos e experiências na área.
+            </p>
+            
+            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+              Minha paixão está em transformar dados em insights valiosos e criar 
+              soluções inteligentes que possam fazer a diferença no mundo real.
             </p>
 
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Minha paixão está em transformar dados em insights valiosos e
-              criar soluções inteligentes que possam fazer a diferença no mundo
-              real.
-            </p>
             <div className="flex items-center text-muted-foreground mb-4">
               <MapPin className="h-5 w-5 mr-2 text-primary" />
               <span>Almirante Tamandaré - Paraná</span>
@@ -41,8 +39,7 @@ const AboutMe = () => {
                   <h3 className="text-xl font-semibold">Educação</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Estudante de Engenharia de Software, sempre em busca de novos
-                  conhecimentos
+                  Estudante de Engenharia de Software, sempre em busca de novos conhecimentos
                 </p>
               </CardContent>
             </Card>
@@ -54,8 +51,7 @@ const AboutMe = () => {
                   <h3 className="text-xl font-semibold">Paixão</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Data Science e Inteligência Artificial - transformando dados
-                  em soluções
+                  Data Science e Inteligência Artificial - transformando dados em soluções
                 </p>
               </CardContent>
             </Card>
@@ -67,8 +63,7 @@ const AboutMe = () => {
                   <h3 className="text-xl font-semibold">Objetivo</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Explorar e dominar diversas linguagens e tecnologias
-                  emergentes
+                  Explorar e dominar diversas linguagens e tecnologias emergentes
                 </p>
               </CardContent>
             </Card>
