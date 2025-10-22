@@ -60,7 +60,7 @@ src/
 ### Instalação
 ```bash
 # Clone o repositório
-git clone <seu-repositorio>
+git clone <repositorio>
 
 # Entre no diretório
 cd portfolio-guilherme
